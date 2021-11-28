@@ -440,31 +440,6 @@ public class Main extends JComponent implements Runnable{
     }
 
     public void run() {
-        frame = new JFrame("Post Forum");
-        content = frame.getContentPane();
-
-        frameRight = new JFrame("Post Forum");
-        contentRight = frameRight.getContentPane();
-
-        frameRightVote = new JFrame("Post Forum");
-        contentRightVote = frameRightVote.getContentPane();
-
-        frameRightSort = new JFrame("Post Forum");
-        contentRightSort = frameRightSort.getContentPane();
-
-        frameRightGrade = new JFrame("Post Forum");
-        contentRightGrade = frameRightGrade.getContentPane();
-
-        frameScroll = new JFrame("Post Forum");
-        contentScroll = frameScroll.getContentPane();
-
-        textArea = new JTextArea();
-        scrollableTextArea = new JScrollPane(textArea);
-
-        c = new GridBagConstraints();
-
-        jScrollPane = new JScrollPane(contentScroll);
-
         accounts = ExtraUtil.readAccounts();
         Account account = new Account(currentUsers[userIndex]);
         boolean valid = false;
