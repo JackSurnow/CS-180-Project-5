@@ -277,11 +277,13 @@ public class Main extends JComponent implements Runnable{
 
                 FileImports fileImports = new FileImports(currentUsers[userIndex]);
                 boolean valid = false;
-
-                if (importMenu.equals("Import Post")) {
-                    valid = fileImports.importPost(posts);
-                } else if (importMenu.equals("Import Reply")) {
-                    valid = fileImports.importReply(post);
+                
+                if (importMenu != null) {
+                    if (importMenu.equals("Import Post")) {
+                        valid = fileImports.importPost(posts);
+                    } else if (importMenu.equals("Import Reply")) {
+                        valid = fileImports.importReply(post);
+                    }
                 }
 
                if (valid) {
