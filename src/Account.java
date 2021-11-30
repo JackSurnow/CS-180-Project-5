@@ -111,26 +111,28 @@ public class Account {
         String username;
         String password;
 
-        if (editMenu.equals("Change Username")) {
-            username = JOptionPane.showInputDialog(null, "Enter your new username (Do not use a semicolon).",
-                    "Post Forum", JOptionPane.QUESTION_MESSAGE);
-            if (newUsername(username) && !username.contains(";")) {
-                main.setUsername(username);
-                accountInfo[0] = username;
+        if (editMenu != null) {
+            if (editMenu.equals("Change Username")) {
+                username = JOptionPane.showInputDialog(null, "Enter your new username (Do not use a semicolon).",
+                        "Post Forum", JOptionPane.QUESTION_MESSAGE);
+                if (newUsername(username) && !username.contains(";")) {
+                    main.setUsername(username);
+                    accountInfo[0] = username;
+                }
+                accounts.set(indexInfo, String.format("%s;%s;%s", accountInfo[0], accountInfo[1], accountInfo[2]));
+                Main.setAccounts(accounts);
+                ExtraUtil.writeAccounts(accounts);
+            } else if (editMenu.equals("Change Password")) {
+                password = JOptionPane.showInputDialog(null, "Enter your new password (Do not use a semicolon).",
+                        "Post Forum", JOptionPane.QUESTION_MESSAGE);
+                if (!password.contains(";")) {
+                    main.setPassword(password);
+                    accountInfo[1] = password;
+                }
+                accounts.set(indexInfo, String.format("%s;%s;%s", accountInfo[0], accountInfo[1], accountInfo[2]));
+                Main.setAccounts(accounts);
+                ExtraUtil.writeAccounts(accounts);
             }
-            accounts.set(indexInfo, String.format("%s;%s;%s", accountInfo[0], accountInfo[1], accountInfo[2]));
-            Main.setAccounts(accounts);
-            ExtraUtil.writeAccounts(accounts);
-        } else if (editMenu.equals("Change Password")) {
-            password = JOptionPane.showInputDialog(null, "Enter your new password (Do not use a semicolon).",
-                    "Post Forum", JOptionPane.QUESTION_MESSAGE);
-            if (!password.contains(";")) {
-                main.setPassword(password);
-                accountInfo[1] = password;
-            }
-            accounts.set(indexInfo, String.format("%s;%s;%s", accountInfo[0], accountInfo[1], accountInfo[2]));
-            Main.setAccounts(accounts);
-            ExtraUtil.writeAccounts(accounts);
         }
     }
 
