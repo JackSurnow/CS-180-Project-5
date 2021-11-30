@@ -277,7 +277,7 @@ public class Main extends JComponent implements Runnable{
 
                 FileImports fileImports = new FileImports(currentUsers[userIndex]);
                 boolean valid = false;
-                
+
                 if (importMenu != null) {
                     if (importMenu.equals("Import Post")) {
                         valid = fileImports.importPost(posts);
@@ -453,13 +453,15 @@ public class Main extends JComponent implements Runnable{
                 String logInMenu = (String) JOptionPane.showInputDialog(null, "Log in or sign up.",
                         "Post Forum", JOptionPane.PLAIN_MESSAGE, null, options, null);
 
-                if (logInMenu.equals("Log In")) {
-                    if (account.logIn()) {
-                        valid = true;
-                    }
-                } else if (logInMenu.equals("Sign Up")) {
-                    if (account.signUp()) {
-                        valid = true;
+                if (logInMenu != null) {
+                    if (logInMenu.equals("Log In")) {
+                        if (account.logIn()) {
+                            valid = true;
+                        }
+                    } else if (logInMenu.equals("Sign Up")) {
+                        if (account.signUp()) {
+                            valid = true;
+                        }
                     }
                 }
             } else if (accounts != null) {
