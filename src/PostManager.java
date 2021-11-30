@@ -148,7 +148,6 @@ public class PostManager {
                 }
             }
         }
-        main.setPost(null);
         return false;
     }
 }
