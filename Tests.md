@@ -1,9 +1,9 @@
 <h3> Ensure that the server is running prior to running tests** </h3>
 
+<hr></hr>
+
 <h1>Test 1</h1>
 <h2>Teacher Account Creation & Post Creation</h2>
-
-<hr></hr>
 
 Steps:
 
@@ -24,11 +24,10 @@ Steps:
 
 </ol>
 
+<hr></hr>
 
 <h1> Test 2 </hi>
 <h2>Student Account Creation & Reply Creation/Voting</h2>
-
-<hr></hr>
 
 Steps:
 
@@ -51,10 +50,10 @@ Steps:
 <li> Program closes</li>
 </ol>
 
+<hr></hr>
+
 <h1> Test 3 </hi>
 <h2>Teacher Grading</h2>
-
-<hr></hr>
 
 Steps:
 
@@ -76,10 +75,10 @@ Steps:
 <li> Program closes</li>
 </ol>
 
+<hr></hr>
+
 <h1> Test 4 </hi>
 <h2>Student Grade Viewing</h2>
-
-<hr></hr>
 
 Steps:
 
@@ -94,14 +93,12 @@ Steps:
 <li> Graded replies (Test 3) show in the main output window </li>
 <li> User selects Log Out button in top right corner</li>
 <li> Program closes</li>
-
-
 </ol>
+
+<hr></hr>
 
 <h1> Test 5 </hi>
 <h2>Replies to Replies</h2>
-
-<hr></hr>
 
 Steps:
 
