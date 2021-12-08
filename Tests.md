@@ -5,8 +5,6 @@
 Steps
 
 <ol>
- Open 
-  Close
-  la
-  
+ <item> open </item>
+ <item> close </item>
 </ol>
