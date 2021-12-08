@@ -1,4 +1,4 @@
-<h3> Ensure that the server is running prior to running tests** </h3>
+<h3>Note: Ensure that the server is running prior to running tests </h3>
 
 <hr></hr>
 
