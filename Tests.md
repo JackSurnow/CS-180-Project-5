@@ -4,9 +4,9 @@
 
 Steps
 
-<il>
+<ol>
  Open 
   Close
   la
   
-</il>
+</ol>
