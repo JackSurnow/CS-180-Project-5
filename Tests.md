@@ -5,6 +5,6 @@
 Steps
 
 <ol>
- <item> open </item>
- <item> close </item>
+ <li> open </li>
+ <li> close </li>
 </ol>
